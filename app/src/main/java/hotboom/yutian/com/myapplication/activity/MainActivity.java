@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             View navigationBtnLayout = LayoutInflater.from(this).inflate(R.layout.main_navigation_btn, null);
             TextView navigationBtn = navigationBtnLayout.findViewById(R.id.navigation_btn);
             navigationBtn.setText(titles.get(i));
-            navigationBtn.setCompoundDrawables(null, ContextCompat.getDrawable(this, imgIds.get(i)), null, null);
+            navigationBtn.setCompoundDrawablesWithIntrinsicBounds(null, ContextCompat.getDrawable(this, imgIds.get(i)), null, null);
 
             tab.setCustomView(navigationBtn);
             binding.tabLayout.addTab(tab);
@@ -77,6 +77,22 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onPageScrollStateChanged(int state) {
+
+            }
+        });
+        binding.tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+            @Override
+            public void onTabSelected(TabLayout.Tab tab) {
+                binding.viewPager.setCurrentItem(tab.getPosition());
+            }
+
+            @Override
+            public void onTabUnselected(TabLayout.Tab tab) {
+
+            }
+
+            @Override
+            public void onTabReselected(TabLayout.Tab tab) {
 
             }
         });

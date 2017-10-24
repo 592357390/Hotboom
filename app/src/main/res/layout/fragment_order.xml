@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="hotboom.yutian.com.myapplication.fragment.CustomerFragment">
+        tools:context="hotboom.yutian.com.myapplication.fragment.OrderFragment">
 
         <RelativeLayout
             android:background="@color/colorPrimary"

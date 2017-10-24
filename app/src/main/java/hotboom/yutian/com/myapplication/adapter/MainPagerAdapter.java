@@ -18,8 +18,6 @@ public class MainPagerAdapter extends FragmentPagerAdapter {
 
     private List<String> titles = new ArrayList<>();
 
-    private List<Integer> imgIds = new ArrayList<>();
-
     public MainPagerAdapter(FragmentManager fm, List<Fragment> fragments) {
         super(fm);
 

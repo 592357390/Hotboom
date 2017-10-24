@@ -2,7 +2,6 @@ package hotboom.yutian.com.myapplication.fragment;
 
 
 import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -23,6 +22,7 @@ public class OrderFragment extends Fragment {
 
     FragmentOrderBinding binding;
     List<String> orderType = new ArrayList<>();
+
 
     public OrderFragment() {
         // Required empty public constructor
